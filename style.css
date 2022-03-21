@@ -43,11 +43,15 @@ body {
 }
 
 svg {
-	height: 2em;
-	width: 2em;
+	height: 30px;
+	width: 30px;
 }
 .icon {
 	fill: white;
+	align-self: center;
+}
+a {
+	align-self: center;
 }
 
 .icon:hover {
@@ -59,7 +63,7 @@ svg {
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--background-color);
-	padding: 0.5em 3em;
+	padding: 1em 3em;
 	color: white;
 	max-width: 100vw;
 	font-weight: 500;
@@ -68,6 +72,7 @@ svg {
 #contactArea {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 1em;
 }
 
@@ -155,6 +160,7 @@ ul > p {
 #menuTitle {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	font-size: 1.5em;
 	font-weight: 900;
 	align-self: center;
@@ -198,14 +204,19 @@ ul > p {
 }
 
 #facebookHolder {
-	z-index: 1;
 	padding: 1em 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: center;
+	min-height: 600px;
 	background-image: url("./facebookbackground.jpg");
-	background-size: 100vw auto;
+	background-size:  auto 100vw;
+}
+
+#facebookHolder > div {
+	width: 500px;
+	align-self: center;
 }
 
 #openingTimes, #pubQuiz {
@@ -215,7 +226,45 @@ ul > p {
 	align-items: center;
 }
 
-.mapouter {
-	align-self: center;
+#pubQuiz > p {
+	text-align: center;
+	margin: 0 1em;
 }
 
+.mapouter {
+	align-self: center;
+	max-width: 90vw;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	#contactArea > p {
+		display: none;
+	}
+	#header {
+		padding: 0.3em;
+	}
+
+	#welcomeTextArea {
+		max-width: unset;
+		width: 100vw;
+	}
+
+	.mapouter {
+		width: unset;
+		height: unset;
+		max-width: 80vw;
+	}
+	#facebookHolder {
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+	#facebookHolder > div {
+		width: calc(100vw - 50px);
+		min-width: 200px;
+	}
+	#menuTitle::after {
+		display: none;
+	}
+	
+}

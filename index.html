@@ -10,13 +10,16 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0"
+		nonce="PSCCK2B8"></script>
 	<div id="header">
 		<h1>West Acre Stag</h1>
-		
+
 		<div id="contactArea">
 			<p>To order, call or message us on Facebook</p>
 			<a href="https://www.facebook.com/WestAcreStag/">
-				<svg class="icon" viewBox="0 0 50 50" width="50px" height="50px">
+				<svg class="icon" viewBox="0 0 50 50" width="30px" height="30px">
 					<path style=" fill-opacity:1;"
 						d="M 25 3 C 12.851562 3 3 12.851562 3 25 C 3 36.03125 11.125 45.136719 21.710938 46.726562 L 21.710938 30.832031 L 16.269531 30.832031 L 16.269531 25.046875 L 21.710938 25.046875 L 21.710938 21.199219 C 21.710938 14.828125 24.816406 12.03125 30.109375 12.03125 C 32.648438 12.03125 33.988281 12.21875 34.621094 12.304688 L 34.621094 17.355469 L 31.011719 17.355469 C 28.761719 17.355469 27.976562 19.484375 27.976562 21.886719 L 27.976562 25.046875 L 34.566406 25.046875 L 33.671875 30.832031 L 27.976562 30.832031 L 27.976562 46.773438 C 38.714844 45.316406 47 36.136719 47 25 C 47 12.851562 37.148438 3 25 3 Z M 25 3 " />
 				</svg>
@@ -39,7 +42,7 @@
 	<div class="menuArea">
 		<h1 id="menuTitle">Takeaway Menu - Wednesday to Sunday</h1>
 		<div id="menuSections">
-			
+
 			<div>
 				<h2 class="menuHeader">Mains for £8</h2>
 				<ul>
@@ -100,11 +103,11 @@
 			<ul>
 				<li>Mon: Closed</li>
 				<li>Tues: Closed</li>
-				<li>Wed: 12:00 - 3:00 and 18:30 - 23:00</li>
-				<li>Thurs: 12:00 - 3:00 and 18:30 - 23:00</li>
-				<li>Fri: 12:00 - 3:00 and 17:30 - 23:00</li>
-				<li>Sat: 12:00 - 3:00 and 18:30 - 23:00</li>
-				<li>Sun: 12:00 - 3:00 and 18:30 - 23:00</li>
+				<li>Wed: 12:00 - 15:00 and 18:30 - 23:00</li>
+				<li>Thurs: 12:00 - 15:00 and 18:30 - 23:00</li>
+				<li>Fri: 12:00 - 15:00 and 17:30 - 23:00</li>
+				<li>Sat: 12:00 - 15:00 and 18:30 - 23:00</li>
+				<li>Sun: 12:00 - 15:00 and 18:30 - 23:00</li>
 			</ul>
 		</div>
 		<div id="pubQuiz">
@@ -120,16 +123,18 @@
 					.mapouter {
 						position: relative;
 						text-align: right;
+						max-height: 500px;
+						max-width: 500px;
 						height: 500px;
-						width: 500px;
+						width: 80vw
 					}
-				</style><a href="https://www.embedgooglemap.net">how to embed google maps into html</a>
+				</style>
 				<style>
 					.gmap_canvas {
 						overflow: hidden;
 						background: none !important;
-						height: 500px;
-						width: 500px;
+						height: 100%;
+						width: 100%;
 					}
 				</style>
 			</div>
@@ -138,11 +143,8 @@
 
 	<div id="facebookHolder">
 		<div>
-			<div id="fb-root"></div>
-			<script async defer crossorigin="anonymous"
-				src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="jSUrXv48"></script>
 			<div class="fb-page" data-href="https://www.facebook.com/WestAcreStag/" data-tabs="timeline, messages"
-				data-width="500" data-height="" data-small-header="true" data-adapt-container-width="false"
+				data-width="500" data-height="500" data-small-header="true" data-adapt-container-width="true"
 				data-hide-cover="false" data-show-facepile="true">
 				<blockquote cite="https://www.facebook.com/WestAcreStag/" class="fb-xfbml-parse-ignore"><a
 						href="https://www.facebook.com/WestAcreStag/">West Acre Stag</a></blockquote>
